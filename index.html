@@ -1,55 +1,24 @@
 <!DOCTYPE html>
-
 <html lang="fa" dir="rtl">
-
 <head>
-    <!-- Basic -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>وکسایت | WEXITE — طراحی وب‌سایت مدرن برای کسب‌وکارها</title>
-
-    <meta
-        name="description"
-        content="وکسایت | طراحی و توسعه وب‌سایت‌های مدرن، سریع و موبایل‌فرندلی برای کسب‌وکارها."
-    >
-
+    <meta name="description" content="وکسایت | طراحی و توسعه وب‌سایت‌های مدرن، سریع و موبایل‌فرندلی برای کسب‌وکارها.">
     <meta name="robots" content="index, follow">
     <meta name="author" content="WEXITE">
-
-    <!-- Language & Theme -->
     <meta name="theme-color" content="#0f172a">
     <meta name="color-scheme" content="dark light">
-
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/png">
-
-    <!-- Fonts -->
-    <link rel="preload"
-          href="./fonts/Estedad[wght,kshd].ttf"
-          as="font"
-          type="font/ttf"
-          crossorigin>
-
-    <!-- Performance -->
+    <link rel="preload" href="./fonts/Estedad[wght,kshd].ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
-    <!-- Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    >
-    <!-- Open Graph -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WEXITE | طراحی وب‌سایت برای کسب‌وکارها">
     <meta property="og:description" content="طراحی وب‌سایت‌های مدرن، سریع و کاربرپسند برای کسب‌وکارها.">
     <meta property="og:url" content="https://itsamirata.github.io/wexite/">
     <meta property="og:image" content="https://itsamirata.github.io/wexite/images/logo.svg">
     <meta property="og:site_name" content="WEXITE">
-
-    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="WEXITE | طراحی وب‌سایت برای کسب‌وکارها">
     <meta name="twitter:description" content="طراحی وب‌سایت‌های مدرن، سریع و کاربرپسند برای کسب‌وکارها.">
@@ -61,7 +30,6 @@
             font-weight: 100 900;
             font-display: swap;
         }
-        /* ---------- RESET & BASE ---------- */
         *,
         *::before,
         *::after {
@@ -69,9 +37,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         :root {
-            /* Core palette */
             --bg: #FEF5CC;
             --bg-light: #FFF9E6;
             --surface: #FFFDF5;
@@ -88,20 +54,14 @@
             --lavender: #C5C6FF;
             --white: #FFFFFF;
             --black: #111111;
-
-            /* Borders & shadows */
             --border-thick: 3px solid #111;
             --border-thicker: 4px solid #111;
             --shadow-small: 3px 3px 0 #111;
             --shadow-medium: 5px 5px 0 #111;
             --shadow-large: 8px 8px 0 #111;
-
-            /* Radius */
             --radius-sm: 4px;
             --radius-md: 8px;
             --radius-lg: 12px;
-
-            /* Spacing */
             --space-1: 4px;
             --space-2: 8px;
             --space-3: 12px;
@@ -111,52 +71,41 @@
             --space-7: 48px;
             --space-8: 64px;
             --space-9: 96px;
-
-            /* Typography */
             --font-head: 'Poppins', 'Estedad', system-ui, sans-serif;
             --font-body: 'Rubik', 'Estedad', system-ui, sans-serif;
             --font-fa: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             --transition: 0.15s ease-in-out;
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
             font-family: "Estedad", sans-serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.6;
-            padding: 0;
             -webkit-font-smoothing: antialiased;
             overflow-x: hidden;
             font-size: 16px;
         }
-
         a {
             text-decoration: none;
             color: inherit;
         }
-
         img {
             max-width: 100%;
             display: block;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-
         h1, h2, h3, h4, h5, h6, .logo, .btn, .faq-question, .nav-links a, .step-num {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif; /* همه عنوان‌ها استعداد */
+            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-weight: 800;
             letter-spacing: -0.3px;
         }
-
-        /* ---------- BUTTONS (brutalist tactile) ---------- */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -164,7 +113,6 @@
             gap: 10px;
             padding: 12px 26px;
             border-radius: var(--radius-sm);
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-weight: 800;
             font-size: 1rem;
             border: var(--border-thick);
@@ -178,80 +126,66 @@
             line-height: 1.2;
             white-space: nowrap;
         }
-
         .btn:hover {
             transform: translate(-1px, -1px);
             box-shadow: var(--shadow-medium);
             background: #FFE87E;
         }
-
         .btn:active {
             transform: translate(3px, 3px);
             box-shadow: 1px 1px 0 #111;
         }
-
         .btn-blue {
             background: var(--blue);
             color: #fff;
             border-color: #111;
             box-shadow: var(--shadow-small);
         }
-
         .btn-blue:hover {
             background: #0d3ab8;
             box-shadow: var(--shadow-medium);
         }
-
         .btn-orange {
             background: var(--orange);
             color: #fff;
             border-color: #111;
             box-shadow: var(--shadow-small);
         }
-
         .btn-orange:hover {
             background: #d94a1e;
             box-shadow: var(--shadow-medium);
         }
-
         .btn-pink {
             background: var(--pink);
             color: #111;
             border-color: #111;
             box-shadow: var(--shadow-small);
         }
-
         .btn-pink:hover {
             background: #ff8bd6;
             box-shadow: var(--shadow-medium);
         }
-
         .btn-teal {
             background: var(--teal);
             color: #fff;
             border-color: #111;
             box-shadow: var(--shadow-small);
         }
-
         .btn-teal:hover {
             background: #029d86;
             box-shadow: var(--shadow-medium);
         }
-
         .btn-outline-light {
             background: transparent;
             color: var(--text);
             border: 3px solid #111;
             box-shadow: none;
         }
-
         .btn-outline-light:hover {
             background: #fff;
             box-shadow: var(--shadow-small);
             transform: translate(-1px, -1px);
         }
-
-        /* ---------- HEADER (brutalist nav) ---------- */
         header {
             position: fixed;
             top: 0;
@@ -263,19 +197,16 @@
             border-bottom: 4px solid #111;
             transition: var(--transition);
         }
-
         header.scrolled {
             background: #FFE87E;
             padding: 8px 0;
         }
-
         .header-inner {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 12px;
         }
-
         .logo {
             font-size: 1.7rem;
             font-weight: 900;
@@ -290,37 +221,30 @@
             box-shadow: var(--shadow-small);
             white-space: nowrap;
         }
-
         .logo span {
             font-weight: 400;
             font-size: 0.8rem;
             color: #3D3D3D;
         }
-
         .nav-links {
             display: flex;
             align-items: center;
             gap: 14px;
             list-style: none;
         }
-
         .nav-links a {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-weight: 700;
             font-size: 0.95rem;
             color: #111;
             transition: var(--transition);
             padding: 6px 8px;
             border-bottom: 3px solid transparent;
-            background: transparent;
             white-space: nowrap;
         }
-
         .nav-links a:hover {
             border-bottom-color: #111;
             background: rgba(255,255,255,0.3);
         }
-
         .nav-cta {
             background: var(--blue) !important;
             color: #fff !important;
@@ -331,15 +255,12 @@
             box-shadow: var(--shadow-small);
             border-bottom: 3px solid #111 !important;
         }
-
         .nav-cta:hover {
             background: #0d3ab8 !important;
             transform: translate(-1px, -1px);
             box-shadow: var(--shadow-medium);
             border-bottom-color: #111 !important;
         }
-
-        /* Mobile hamburger */
         .hamburger {
             display: none;
             flex-direction: column;
@@ -355,7 +276,6 @@
             align-items: center;
             justify-content: center;
         }
-
         .hamburger span {
             display: block;
             width: 22px;
@@ -364,20 +284,15 @@
             border-radius: 2px;
             transition: var(--transition);
         }
-
         .hamburger.active span:nth-child(1) {
             transform: rotate(45deg) translate(5px, 5px);
         }
-
         .hamburger.active span:nth-child(2) {
             opacity: 0;
         }
-
         .hamburger.active span:nth-child(3) {
             transform: rotate(-45deg) translate(5px, -5px);
         }
-
-        /* ---------- HERO (brutalist playful) ---------- */
         .hero {
             padding: 130px 0 70px;
             background: var(--bg);
@@ -386,7 +301,6 @@
             overflow: hidden;
             min-height: 85vh;
         }
-
         .hero-grid {
             display: flex;
             justify-content: center;
@@ -395,7 +309,6 @@
             position: relative;
             z-index: 2;
         }
-
         .hero-text {
             display: flex;
             flex-direction: column;
@@ -410,16 +323,13 @@
             box-shadow: var(--shadow-large);
             position: relative;
         }
-
         .hero-title {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-size: clamp(2.2rem, 6vw, 3.8rem);
             font-weight: 900;
             line-height: 1.2;
             color: #111;
             letter-spacing: -0.5px;
         }
-
         .hero-title .highlight {
             display: inline-block;
             background: var(--blue);
@@ -430,16 +340,13 @@
             box-shadow: var(--shadow-small);
             transform: rotate(-1deg);
         }
-
         .hero-sub {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-size: 1.2rem;
             color: #2a2a2a;
             max-width: 600px;
             line-height: 1.7;
             font-weight: 500;
         }
-
         .hero-actions {
             display: flex;
             flex-wrap: wrap;
@@ -447,15 +354,12 @@
             gap: 16px;
             margin-top: 8px;
         }
-
-        /* ---------- SECTION TAG (brutalist badge) ---------- */
         .section-tag {
             display: inline-flex;
             align-items: center;
             gap: 8px;
             background: var(--pink);
             color: #111;
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-size: 0.9rem;
             font-weight: 800;
             padding: 6px 16px;
@@ -465,9 +369,8 @@
             transform: rotate(-2deg);
             letter-spacing: 0.3px;
             white-space: nowrap;
-            margin-bottom: 0; /* مقدار پیش فرض */
+            margin-bottom: 0;
         }
-
         .section-header {
             text-align: center;
             margin-bottom: 48px;
@@ -475,16 +378,13 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 0; /* حذف فاصله اضافی بین تگ و تایتل */
+            gap: 0;
         }
-
         .section-header .section-tag {
-            margin-bottom: 8px; /* فاصله کمی بین تگ و تایتل */
+            margin-bottom: 8px;
             z-index: 2;
         }
-
         .section-header h2 {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-size: clamp(1.9rem, 4vw, 2.8rem);
             font-weight: 900;
             letter-spacing: -0.5px;
@@ -494,37 +394,29 @@
             border: 4px solid #111;
             border-radius: var(--radius-sm);
             box-shadow: var(--shadow-medium);
-            margin-top: -6px; /* کمی روی تگ بیاید */
+            margin-top: -6px;
             position: relative;
             z-index: 1;
         }
-
         .section-header p {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             color: #222;
             font-size: 1.1rem;
             max-width: 600px;
             margin: 20px auto 0;
             font-weight: 500;
         }
-
-        /* ---------- SECTIONS (خط بین سکشن‌ها برگردانده شده) ---------- */
         .section {
             padding: 70px 0;
-            border-bottom: 4px solid #111; /* خط پایین هر سکشن */
+            border-bottom: 4px solid #111;
         }
-
         .section:nth-of-type(odd) {
             background: var(--bg-light);
         }
-
-        /* ---------- PROJECTS (cards) ---------- */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 32px;
         }
-
         .project-card {
             background: #fff;
             border: 4px solid #111;
@@ -536,16 +428,13 @@
             flex-direction: column;
             transform: rotate(0deg);
         }
-
         .project-card:nth-child(1) { background: #FFF9E6; }
         .project-card:nth-child(2) { background: #FFEEF2; }
         .project-card:nth-child(3) { background: #E8F0FE; }
-
         .project-card:hover {
             transform: translate(-4px, -4px) rotate(-0.5deg);
             box-shadow: var(--shadow-large);
         }
-
         .project-img {
             aspect-ratio: 16 / 9;
             overflow: hidden;
@@ -555,7 +444,6 @@
             align-items: center;
             justify-content: center;
         }
-
         .project-img img {
             width: 100%;
             height: 100%;
@@ -563,7 +451,6 @@
             display: block;
             border: 0;
         }
-
         .project-body {
             padding: 20px 22px 26px;
             display: flex;
@@ -571,23 +458,17 @@
             flex-grow: 1;
             gap: 12px;
         }
-
         .project-body h3 {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-size: 1.4rem;
             font-weight: 900;
             line-height: 1.3;
-            color: #111;
         }
-
         .project-body p {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             color: #2c2c2c;
             font-size: 0.98rem;
             flex-grow: 1;
             font-weight: 500;
         }
-
         .btn-sm {
             align-self: flex-start;
             padding: 10px 20px;
@@ -596,7 +477,6 @@
             background: var(--teal);
             color: #fff;
             border: 3px solid #111;
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-weight: 800;
             cursor: pointer;
             transition: var(--transition);
@@ -605,14 +485,11 @@
             gap: 8px;
             box-shadow: var(--shadow-small);
         }
-
         .btn-sm:hover {
             background: #029d86;
             transform: translate(-2px, -2px);
             box-shadow: var(--shadow-medium);
         }
-
-        /* ---------- SERVICES ---------- */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -621,7 +498,6 @@
             margin: 0 auto;
             justify-content: center;
         }
-
         .service-item {
             background: #fff;
             border: 4px solid #111;
@@ -630,54 +506,42 @@
             text-align: center;
             box-shadow: var(--shadow-small);
             transition: var(--transition);
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 180px;
         }
-
         .service-item:nth-child(1) { background: #FFE87E; }
         .service-item:nth-child(2) { background: #FFA9E8; }
         .service-item:nth-child(3) { background: #C5C6FF; }
         .service-item:nth-child(4) { background: #A8F0E0; }
         .service-item:nth-child(5) { background: #8df694; }
         .service-item:nth-child(6) { background: #FFD6A5; }
-
         .service-item:hover {
             transform: translateY(-6px) rotate(0.5deg);
             box-shadow: var(--shadow-medium);
         }
-
         .service-item .icon {
             font-size: 2.5rem;
             color: #111;
             margin-bottom: 12px;
         }
-
         .service-item h4 {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-size: 1.2rem;
             font-weight: 900;
             margin-bottom: 8px;
-            color: #111;
         }
-
         .service-item p {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             color: #2a2a2a;
             font-size: 0.92rem;
             font-weight: 500;
         }
-
-        /* ---------- PROCESS ---------- */
         .process-steps {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 20px;
         }
-
         .process-step {
             background: #fff;
             text-align: center;
@@ -692,18 +556,15 @@
             align-items: center;
             justify-content: flex-start;
         }
-
         .process-step:nth-child(1) { background: #FFB3C6; }
         .process-step:nth-child(2) { background: #FFD6A5; }
         .process-step:nth-child(3) { background: #C5C6FF; }
         .process-step:nth-child(4) { background: #A8F0E0; }
         .process-step:nth-child(5) { background: #FFF1A8; }
-
         .process-step:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-medium);
         }
-
         .step-num {
             display: inline-flex;
             align-items: center;
@@ -713,36 +574,28 @@
             border-radius: 50%;
             background: var(--blue);
             color: #fff;
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-weight: 900;
             font-size: 1.5rem;
             margin-bottom: 14px;
             border: 3px solid #111;
             box-shadow: var(--shadow-small);
         }
-
         .process-step h4 {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-size: 1.1rem;
             font-weight: 900;
             color: #111;
         }
-
         .process-step p {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             color: #2e2e2e;
             font-size: 0.9rem;
             margin-top: 8px;
             font-weight: 500;
         }
-
-        /* ---------- WHY ME ---------- */
         .why-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 24px;
         }
-
         .why-item {
             background: #fff;
             padding: 32px 20px;
@@ -757,39 +610,29 @@
             justify-content: center;
             min-height: 200px;
         }
-
         .why-item:nth-child(1) { background: #FFE87E; }
         .why-item:nth-child(2) { background: #C1F0B0; }
         .why-item:nth-child(3) { background: #FFB3C6; }
         .why-item:nth-child(4) { background: #D8C6FF; }
-
         .why-item:hover {
             transform: rotate(-1deg) translateY(-4px);
             box-shadow: var(--shadow-medium);
         }
-
         .why-item .icon {
             font-size: 2.3rem;
             color: #111;
             margin-bottom: 12px;
         }
-
         .why-item h4 {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-weight: 900;
             font-size: 1.2rem;
-            color: #111;
         }
-
         .why-item p {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             color: #2b2b2b;
             font-size: 0.92rem;
             margin-top: 8px;
             font-weight: 500;
         }
-
-        /* ---------- FAQ ---------- */
         .faq-list {
             max-width: 760px;
             margin: 0 auto;
@@ -797,7 +640,6 @@
             flex-direction: column;
             gap: 16px;
         }
-
         .faq-item {
             background: #fff;
             border: 4px solid #111;
@@ -806,17 +648,14 @@
             transition: var(--transition);
             box-shadow: var(--shadow-small);
         }
-
         .faq-item.active {
             background: #FFFCEB;
         }
-
         .faq-question {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 18px 22px;
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-weight: 800;
             font-size: 1.05rem;
             cursor: pointer;
@@ -826,7 +665,6 @@
             background: #fffbe6;
             border-bottom: 2px solid transparent;
         }
-
         .faq-question i {
             transition: var(--transition);
             color: var(--blue);
@@ -841,73 +679,71 @@
             justify-content: center;
             flex-shrink: 0;
         }
-
         .faq-item.active .faq-question i {
             transform: rotate(180deg);
             background: var(--yellow);
         }
-
         .faq-answer {
             max-height: 0;
             padding: 0 22px;
             overflow: hidden;
             transition: max-height 0.3s ease, padding 0.3s ease;
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             color: #2e2e2e;
             font-size: 0.98rem;
             line-height: 1.8;
             font-weight: 500;
         }
-
         .faq-item.active .faq-answer {
             max-height: 300px;
             padding: 18px 22px 22px;
         }
-
-        /* ---------- CONTACT ---------- */
         .contact-wrap {
-            max-width: 780px;
+            max-width: 900px;
             margin: 0 auto;
         }
-
         .contact-info {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
             margin-bottom: 32px;
         }
-
         .contact-item {
             display: flex;
             align-items: center;
             gap: 16px;
             background: #fff;
-            padding: 18px 20px;
+            padding: 28px 24px;
             border: 4px solid #111;
             border-radius: var(--radius-sm);
             box-shadow: var(--shadow-small);
             transition: var(--transition);
             min-width: 0;
             word-break: break-word;
+            position: relative;
+            cursor: pointer;
+            flex-wrap: nowrap;
+            min-height: 90px;
         }
-
         .contact-item:nth-child(1) { background: #FFE87E; }
         .contact-item:nth-child(2) { background: #A8F0E0; }
         .contact-item:nth-child(3) { background: #FFB3C6; }
-
+        .contact-item:nth-child(4) { background: #D8C6FF; }
         .contact-item:hover {
-            transform: translateY(-3px);
+            transform: translateY(-4px);
             box-shadow: var(--shadow-medium);
         }
-
         .contact-item .icon {
-            font-size: 1.8rem;
+            font-size: 2rem;
             color: #111;
-            width: 44px;
+            width: 48px;
             text-align: center;
             flex-shrink: 0;
         }
-
+        .contact-item .icon img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
         .contact-item .info {
             display: flex;
             flex-direction: column;
@@ -916,42 +752,64 @@
             overflow-wrap: break-word;
             word-break: break-word;
             max-width: 100%;
+            pointer-events: none;
         }
-
         .contact-item .label {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             color: #3d3d3d;
             font-weight: 600;
         }
-
         .contact-item .value {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-weight: 800;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: #111;
             word-break: break-word;
             overflow-wrap: break-word;
             max-width: 100%;
-            line-height: 1.4;
+            line-height: 1.5;
         }
-
-        /* خاصیت عدم شکستن برای ایمیل در دسکتاپ */
         .contact-item .value.nowrap-desktop {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
             max-width: 100%;
         }
-
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            left: 14px;
+            width: 32px;
+            height: 32px;
+            background: #fff;
+            border: 2px solid #111;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            color: #111;
+            font-size: 1rem;
+            box-shadow: 2px 2px 0 #111;
+            flex-shrink: 0;
+            z-index: 10;
+            pointer-events: auto;
+        }
+        .copy-btn:hover {
+            background: var(--yellow);
+            transform: scale(1.1);
+            box-shadow: 3px 3px 0 #111;
+        }
+        .copy-btn.copied {
+            background: var(--green);
+            color: #fff;
+        }
         .contact-actions {
             display: flex;
             gap: 18px;
             justify-content: center;
             flex-wrap: wrap;
         }
-
-        /* ---------- FOOTER ---------- */
         footer {
             background: var(--blue);
             color: #fff;
@@ -960,14 +818,12 @@
             border-radius: 20px 20px 0 0;
             margin-top: 20px;
         }
-
         .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
             gap: 36px;
             margin-bottom: 36px;
         }
-
         .footer-brand .logo {
             background: #fff;
             color: #111;
@@ -978,21 +834,16 @@
             box-shadow: var(--shadow-small);
             white-space: nowrap;
         }
-
         .footer-brand .logo span {
             color: #3d3d3d;
         }
-
         .footer-brand p {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             color: #E0E7FF;
             margin-top: 16px;
             max-width: 320px;
             font-size: 0.95rem;
         }
-
         .footer-links h5 {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-weight: 900;
             font-size: 1.2rem;
             margin-bottom: 16px;
@@ -1003,16 +854,13 @@
             border: 3px solid #111;
             border-radius: var(--radius-sm);
         }
-
         .footer-links ul {
             list-style: none;
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
-
         .footer-links a {
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             color: #E0E7FF;
             transition: var(--transition);
             font-size: 0.98rem;
@@ -1020,443 +868,1220 @@
             border-bottom: 2px solid transparent;
             word-break: break-word;
         }
-
         .footer-links a:hover {
             color: #fff;
             border-bottom-color: #fff;
             padding-right: 6px;
         }
-
         .footer-bottom {
             border-top: 3px solid #111;
             padding-top: 20px;
             text-align: center;
             font-size: 0.9rem;
             color: #E0E7FF;
-            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
             font-weight: 500;
         }
 
-        /* ---------- RESPONSIVE ---------- */
-        @media (max-width: 900px) {
-            .nav-links {
-                gap: 8px;
+        .pricing-section {
+            background: #FDF2D8;
+            padding: 80px 0;
+            border-bottom: 4px solid #111;
+        }
+        .pricing-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .pricing-tab-container {
+            display: flex;
+            background: #fff;
+            border: 4px solid #111;
+            border-radius: 60px;
+            padding: 8px 12px;
+            box-shadow: 8px 8px 0 #111;
+            position: relative;
+            gap: 8px;
+            max-width: 700px;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .pricing-tab {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 18px;
+            border-radius: 40px;
+            font-weight: 800;
+            color: #111;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            border: 3px solid transparent;
+            white-space: nowrap;
+            font-size: 1.1rem;
+            background: transparent;
+            position: relative;
+            z-index: 2;
+        }
+        .pricing-tab i {
+            font-size: 1.3rem;
+            transition: transform 0.2s ease;
+        }
+        .pricing-tab.active {
+            background: var(--blue);
+            color: #fff;
+            border-color: #111;
+            box-shadow: 3px 3px 0 #111;
+            transform: translateY(-2px);
+        }
+        .pricing-tab.active i {
+            transform: scale(1.1);
+        }
+        .pricing-tab:not(.active):hover {
+            background: #f0f0f0;
+            border-color: #111;
+        }
+        .pricing-indicator {
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: var(--yellow);
+            border: 3px solid #111;
+            border-radius: 20px;
+            transition: left 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55), width 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            z-index: 1;
+            pointer-events: none;
+        }
+        .pricing-content {
+            transition: all 0.25s ease;
+        }
+        .pricing-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.45s forwards;
+        }
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 26px;
+            align-items: stretch;
+        }
+        .plan-card {
+            background: #fff;
+            border: 4px solid #111;
+            border-radius: 24px;
+            padding: 28px 22px 24px;
+            box-shadow: var(--shadow-medium);
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transform: rotate(0deg);
+        }
+        .plan-card:hover {
+            transform: translateY(-8px) rotate(-0.5deg);
+            box-shadow: 10px 12px 0 #111;
+        }
+        .plan-card.popular {
+            background: #FFFBEB;
+            border-width: 5px;
+            box-shadow: 8px 10px 0 #111;
+            transform: scale(1.02);
+            z-index: 3;
+        }
+        .plan-card.popular:hover {
+            transform: scale(1.03) translateY(-6px);
+        }
+        .popular-badge {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            background: var(--orange);
+            color: #fff;
+            padding: 4px 16px;
+            border: 3px solid #111;
+            border-radius: 30px;
+            font-weight: 900;
+            font-size: 0.8rem;
+            letter-spacing: 0.3px;
+            box-shadow: var(--shadow-small);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 4px;
+            color: #111;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .plan-desc {
+            color: #3D3D3D;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 18px;
+            border-bottom: 2px dashed #ddd;
+            padding-bottom: 12px;
+        }
+        .plan-price {
+            font-size: 1.9rem;
+            font-weight: 900;
+            color: #111;
+            margin-bottom: 4px;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+        .plan-price small {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #444;
+        }
+        .plan-currency {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .plan-features {
+            list-style: none;
+            margin: 20px 0 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .plan-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #222;
+        }
+        .plan-features li i {
+            color: var(--teal);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .btn-plan {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 18px;
+            border-radius: 14px;
+            background: var(--yellow);
+            color: #111;
+            font-weight: 900;
+            border: 3px solid #111;
+            box-shadow: var(--shadow-small);
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
+            font-size: 1rem;
+            letter-spacing: -0.2px;
+        }
+        .btn-plan:hover {
+            background: #FFE87E;
+            transform: translate(-2px, -2px);
+            box-shadow: var(--shadow-medium);
+        }
+        .btn-plan.blue {
+            background: var(--blue);
+            color: #fff;
+        }
+        .btn-plan.blue:hover {
+            background: #0d3ab8;
+        }
+        .btn-plan.orange {
+            background: var(--orange);
+            color: #fff;
+        }
+        .btn-plan.orange:hover {
+            background: #d94a1e;
+        }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+        .tool-card {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(4px);
+            border: 3px solid #111;
+            border-radius: 18px;
+            padding: 20px 16px 18px;
+            box-shadow: 4px 4px 0 #111;
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 232, 126, 0.5);
+            border-radius: 0 0 0 40px;
+            z-index: 0;
+        }
+        .tool-card:hover {
+            transform: translateY(-6px) rotate(0.5deg);
+            box-shadow: 7px 8px 0 #111;
+        }
+        .tool-icon {
+            font-size: 2rem;
+            color: #111;
+            z-index: 1;
+            margin-bottom: 2px;
+        }
+        .tool-name {
+            font-weight: 900;
+            font-size: 1.1rem;
+            z-index: 1;
+        }
+        .tool-desc {
+            font-size: 0.8rem;
+            color: #3D3D3D;
+            font-weight: 500;
+            z-index: 1;
+            flex-grow: 1;
+        }
+        .tool-price {
+            font-weight: 900;
+            font-size: 1rem;
+            color: #111;
+            background: #FFE87E;
+            padding: 2px 10px;
+            border-radius: 20px;
+            border: 2px solid #111;
+            display: inline-block;
+            align-self: flex-start;
+            z-index: 1;
+        }
+        .tool-link {
+            font-weight: 800;
+            font-size: 0.85rem;
+            color: #1747E7;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            z-index: 1;
+            margin-top: 4px;
+            cursor: pointer;
+        }
+        .tool-link i {
+            transition: transform 0.2s;
+        }
+        .tool-link:hover i {
+            transform: translateX(-4px);
+        }
+        /* اضافه شده برای دکمه درخواست کوچک در ابزار */
+        .tool-card .btn-plan {
+            padding: 8px 14px;
+            font-size: 0.8rem;
+            border-width: 2px;
+            box-shadow: 2px 2px 0 #111;
+            border-radius: 8px;
+            align-self: flex-start;
+            margin-top: 6px;
+            gap: 4px;
+            z-index: 2;
+        }
+        .tool-card .btn-plan:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 3px 3px 0 #111;
+        }
+        @media (max-width: 960px) {
+            .plans-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
             }
-            .nav-links a {
-                font-size: 0.85rem;
-                padding: 4px 6px;
-            }
-            .nav-cta {
-                padding: 8px 14px !important;
+            .tools-grid {
+                grid-template-columns: repeat(3, 1fr);
             }
         }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                background: var(--yellow);
-                border-bottom: 4px solid #111;
-                flex-direction: column;
-                padding: 80px 24px 30px;
-                gap: 10px;
-                transform: translateY(-120%);
-                transition: transform 0.25s ease;
-                box-shadow: var(--shadow-large);
-                align-items: stretch;
-                text-align: center;
-                z-index: 999;
-                overflow-y: auto;
-            }
-            .nav-links.open {
-                transform: translateY(0);
-            }
-
-            /* اصلاح: دکمه‌های منو همبرگری نباید پس‌زمینه و border داشته باشند */
-            .nav-links a {
-                font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
-                font-size: 1rem;
-                padding: 12px 0;
-                border: none !important;
-                border-bottom: none !important;
-                background: transparent !important;
-                box-shadow: none !important;
-                width: 100%;
-                text-align: center;
-                border-radius: 0;
-                color: #111;
-            }
-            .nav-cta {
-                border: none !important;
-                background: transparent !important;
-                color: #111 !important;
-                box-shadow: none !important;
-                font-weight: 800;
-            }
-            .hamburger {
-                display: flex;
-                z-index: 1001;
-                min-width: 48px;
-                min-height: 48px;
-                background: transparent;
-                border: none;
-                box-shadow: none;
-                padding: 0;
-                gap: 5px;
-            }
-            .hamburger span {
-                background: #111;
-                width: 30px;
-                height: 4px;
-            }
-            .hamburger.active span:nth-child(1) {
-                transform: rotate(45deg) translate(6px, 6px);
-            }
-            .hamburger.active span:nth-child(3) {
-                transform: rotate(-45deg) translate(6px, -6px);
-            }
-
-            .hero {
-                padding: 110px 0 50px;
-                min-height: auto;
-            }
-            .hero-text {
-                padding: 28px 20px;
-                border-width: 3px;
-                gap: 16px;
-            }
-            .hero-title {
-                font-size: 2rem;
-            }
-            .hero-sub {
-                font-size: 1rem;
-            }
-            .section {
-                padding: 50px 0;
-                border-bottom: 4px solid #111; /* حفظ خطوط در موبایل */
-            }
-            .section-header h2 {
-                font-size: 1.8rem;
-                padding: 6px 16px;
-            }
-            .footer-grid {
+        @media (max-width: 700px) {
+            .plans-grid {
                 grid-template-columns: 1fr;
-                gap: 28px;
+                gap: 22px;
             }
-            .contact-actions {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            .contact-actions .btn {
-                width: 100%;
-            }
-            .projects-grid,
-            .services-grid,
-            .why-grid,
-            .process-steps {
-                gap: 16px;
-            }
-
-            .services-grid,
-            .why-grid {
+            .tools-grid {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
             }
-            .process-steps {
-                grid-template-columns: repeat(2, 1fr);
+            .plan-card.popular {
+                transform: scale(1);
             }
-            .projects-grid {
-                grid-template-columns: 1fr;
+            .plan-card.popular:hover {
+                transform: scale(1.01);
             }
-            .service-item,
-            .why-item {
-                padding: 20px 14px;
-                min-height: 150px;
-            }
-            .service-item h4,
-            .why-item h4 {
-                font-size: 1rem;
-            }
-            .service-item p,
-            .why-item p {
-                font-size: 0.82rem;
-            }
-            .process-step {
-                padding: 20px 12px;
-            }
-            .step-num {
-                width: 44px;
-                height: 44px;
-                font-size: 1.2rem;
-            }
-            .contact-info {
-                grid-template-columns: 1fr;
-            }
-            .contact-item {
-                padding: 14px 16px;
-                flex-wrap: wrap;
-            }
-            .contact-item .value.nowrap-desktop {
-                white-space: normal;
-                overflow: visible;
-                text-overflow: clip;
+            .tool-card .btn-plan {
+                padding: 6px 10px;
+                font-size: 0.7rem;
+                border-width: 2px;
+                box-shadow: 2px 2px 0 #111;
+                border-radius: 6px;
             }
         }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 14px;
-            }
-            .btn {
-                width: 100%;
-                padding: 12px 16px;
-                font-size: 0.9rem;
-                white-space: normal;
-                gap: 6px;
-            }
-            .hero-actions {
-                width: 100%;
-                flex-direction: column;
-            }
-            .hero-title {
-                font-size: 1.8rem;
-            }
-            .logo {
-                font-size: 1.2rem;
-                padding: 4px 8px;
-            }
-            .services-grid,
-            .why-grid,
-            .process-steps {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
-            }
-            .service-item,
-            .why-item,
-            .process-step {
-                border-width: 3px;
-                padding: 16px 10px;
-                min-height: 130px;
-            }
-            .service-item .icon,
-            .why-item .icon {
-                font-size: 2rem;
-            }
-            .service-item h4,
-            .why-item h4 {
-                font-size: 0.9rem;
-            }
-            .service-item p,
-            .why-item p,
-            .process-step p {
-                font-size: 0.75rem;
-                line-height: 1.4;
-            }
-            .process-step h4 {
-                font-size: 0.9rem;
-            }
-            .step-num {
-                width: 38px;
-                height: 38px;
-                font-size: 1rem;
-                margin-bottom: 8px;
-            }
-            .contact-item .value {
-                font-size: 0.85rem;
-            }
-            .faq-question {
-                font-size: 0.9rem;
-                padding: 14px 16px;
-            }
-            .faq-answer {
-                font-size: 0.88rem;
-                padding: 0 16px;
-            }
-        }
-
-        @media (max-width: 350px) {
-            .services-grid,
-            .why-grid,
-            .process-steps {
+        @media (max-width: 380px) {
+            .tools-grid {
                 grid-template-columns: 1fr;
             }
         }
-        
         .hero-logo {
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .hero-logo img {
-            width: 200px;
-            height: 200px;
-            object-fit: contain;
-            margin-top: -30px;
+            margin-top: -40px;
             margin-bottom: -40px;
         }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .logo img {
-            width: 60px;
-            height: 60px;
+        .hero-logo img {
+            width: 100px;
+            height: 100px;
             object-fit: contain;
-            margin-top: -10px;
-            margin-bottom: -10px;
-
+        }
+        .logo img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            margin-top: -5px;
+            margin-bottom: -5px;
         }
         .hero-logo {
             margin-top: -40px;
             margin-bottom: -25px;
         }
-
         @media (max-width: 768px) {
             .hero-logo {
                 margin-top: -20px;
                 margin-bottom: -5px;
             }
-
             .hero-logo img {
-                width: 150px;
-                height: 150px;
-                margin-top: -30px;
-                margin-bottom: -40px;
+                width: 80px;
+                height: 80px;
             }
         }
-
         @media (max-width: 480px) {
             .hero-logo {
                 margin-top: -15px;
                 margin-bottom: 0;
             }
-
             .hero-logo img {
-                width: 150px;
-                height: 150px;
+                width: 80px;
+                height: 80px;
             }
         }
-
-
-        /* =========================================================
-        WEXITE — Background Grid
-        ========================================================= */
-
-        .hero,
-        .section {
+        .hero, .section, .pricing-section {
             position: relative;
             overflow: hidden;
         }
-
-        /* خود مشبک */
         .hero::before,
-        .section::before {
+        .section::before,
+        .pricing-section::before {
             content: "";
             position: absolute;
             inset: 0;
             z-index: 0;
             pointer-events: none;
-
-            background-image:
-                linear-gradient(
-                    rgba(0, 0, 0, 0.1) 1px,
-                    transparent 1px
-                ),
-                linear-gradient(
-                    90deg,
-                    rgb(0, 0, 0, 0.1) 1px,
-                    transparent 1px
-                );
-
+            background-image: linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
             background-size: 70px 70px;
-
-            /* محو شدن به سمت لبه‌ها */
-            -webkit-mask-image: radial-gradient(
-                ellipse 90% 85% at center,
-                #000 0%,
-                rgba(0, 0, 0, 0.75) 55%,
-                transparent 100%
-            );
-
-            mask-image: radial-gradient(
-                ellipse 90% 85% at center,
-                #000 0%,
-                rgba(0, 0, 0, 0.75) 55%,
-                transparent 100%
-            );
+            -webkit-mask-image: radial-gradient(ellipse 90% 85% at center, #000 0%, rgba(0,0,0,0.75) 55%, transparent 100%);
+            mask-image: radial-gradient(ellipse 90% 85% at center, #000 0%, rgba(0,0,0,0.75) 55%, transparent 100%);
         }
-
-        /* تمام محتوای داخل سکشن بالای Grid */
-        .hero > *,
-        .section > * {
+        .hero > *, .section > *, .pricing-section > * {
             position: relative;
             z-index: 1;
         }
+
+        .bottom-nav {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+                font-size: 15px;
+            }
+            .container {
+                padding: 0 16px;
+            }
+            header {
+                padding: 10px 0;
+                border-bottom: 3px solid #111;
+            }
+            header.scrolled {
+                padding: 6px 0;
+            }
+            .header-inner {
+                justify-content: center;
+                gap: 0;
+            }
+            .nav-links,
+            .hamburger {
+                display: none !important;
+            }
+            .logo {
+                font-size: 1.4rem;
+                padding: 4px 14px;
+                border-width: 3px;
+                gap: 4px;
+            }
+            .logo img {
+                width: 36px;
+                height: 36px;
+                margin-top: -3px;
+                margin-bottom: -3px;
+            }
+            .logo span {
+                font-size: 0.7rem;
+            }
+            .hero {
+                padding: 90px 0 45px;
+                min-height: auto;
+                border-bottom: 3px solid #111;
+            }
+            .hero-text {
+                padding: 32px 20px 28px;
+                border-width: 3px;
+                gap: 18px;
+                border-radius: var(--radius-md);
+                box-shadow: 5px 5px 0 #111;
+            }
+            .hero-logo {
+                margin-top: -10px;
+                margin-bottom: 0;
+            }
+            .hero-logo img {
+                width: 70px;
+                height: 70px;
+            }
+            .hero-title {
+                font-size: clamp(1.7rem, 7vw, 2.4rem);
+                line-height: 1.3;
+                letter-spacing: -0.3px;
+            }
+            .hero-title .highlight {
+                padding: 3px 10px;
+                border-width: 2px;
+                box-shadow: 2px 2px 0 #111;
+                font-size: 0.9em;
+            }
+            .hero-sub {
+                font-size: 1rem;
+                line-height: 1.8;
+                max-width: 100%;
+            }
+            .hero-actions {
+                flex-direction: column;
+                width: 100%;
+                gap: 12px;
+                margin-top: 4px;
+            }
+            .hero-actions .btn {
+                width: 100%;
+                padding: 14px 20px;
+                font-size: 1.05rem;
+                white-space: normal;
+                gap: 8px;
+                border-width: 3px;
+                box-shadow: 3px 3px 0 #111;
+            }
+            .section {
+                padding: 48px 0;
+                border-bottom: 3px solid #111;
+            }
+            .pricing-section {
+                padding: 48px 0;
+                border-bottom: 3px solid #111;
+            }
+            .section-header {
+                margin-bottom: 32px;
+                gap: 0;
+            }
+            .section-header .section-tag {
+                font-size: 0.8rem;
+                padding: 5px 12px;
+                border-width: 2px;
+                box-shadow: 2px 2px 0 #111;
+                margin-bottom: 10px;
+                white-space: nowrap;
+            }
+            .section-header h2 {
+                font-size: clamp(1.4rem, 5.5vw, 2rem);
+                padding: 6px 16px;
+                border-width: 3px;
+                box-shadow: 3px 3px 0 #111;
+                margin-top: -4px;
+                letter-spacing: -0.2px;
+            }
+            .section-header p {
+                font-size: 0.95rem;
+                margin-top: 14px;
+                padding: 0 8px;
+                line-height: 1.8;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .project-card {
+                border-width: 3px;
+                box-shadow: 4px 4px 0 #111;
+                border-radius: var(--radius-md);
+            }
+            .project-img {
+                border-bottom-width: 3px;
+            }
+            .project-body {
+                padding: 16px 18px 20px;
+                gap: 10px;
+            }
+            .project-body h3 {
+                font-size: 1.2rem;
+            }
+            .project-body p {
+                font-size: 0.9rem;
+                line-height: 1.7;
+            }
+            .btn-sm {
+                padding: 10px 16px;
+                font-size: 0.9rem;
+                border-width: 2px;
+                box-shadow: 2px 2px 0 #111;
+            }
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+                max-width: 100%;
+            }
+            .service-item {
+                padding: 20px 14px;
+                border-width: 3px;
+                border-radius: var(--radius-sm);
+                box-shadow: 3px 3px 0 #111;
+                min-height: 140px;
+                gap: 4px;
+            }
+            .service-item .icon {
+                font-size: 1.9rem;
+                margin-bottom: 8px;
+            }
+            .service-item h4 {
+                font-size: 1rem;
+                margin-bottom: 4px;
+                letter-spacing: -0.2px;
+            }
+            .service-item p {
+                font-size: 0.8rem;
+                line-height: 1.5;
+            }
+            .process-steps {
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+            }
+            .process-step {
+                padding: 20px 12px;
+                border-width: 3px;
+                border-radius: var(--radius-sm);
+                box-shadow: 3px 3px 0 #111;
+            }
+            .step-num {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+                border-width: 2px;
+                box-shadow: 2px 2px 0 #111;
+            }
+            .process-step h4 {
+                font-size: 0.95rem;
+            }
+            .process-step p {
+                font-size: 0.8rem;
+                margin-top: 6px;
+                line-height: 1.5;
+            }
+            .why-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+            }
+            .why-item {
+                padding: 24px 14px;
+                border-width: 3px;
+                border-radius: var(--radius-sm);
+                box-shadow: 3px 3px 0 #111;
+                min-height: 160px;
+                gap: 4px;
+            }
+            .why-item .icon {
+                font-size: 1.8rem;
+                margin-bottom: 8px;
+            }
+            .why-item h4 {
+                font-size: 1rem;
+                letter-spacing: -0.2px;
+            }
+            .why-item p {
+                font-size: 0.8rem;
+                margin-top: 6px;
+                line-height: 1.5;
+            }
+            .faq-list {
+                gap: 12px;
+            }
+            .faq-item {
+                border-width: 3px;
+                box-shadow: 3px 3px 0 #111;
+            }
+            .faq-question {
+                padding: 14px 16px;
+                font-size: 0.95rem;
+                gap: 10px;
+                min-height: 48px;
+            }
+            .faq-question i {
+                width: 28px;
+                height: 28px;
+                font-size: 1rem;
+                border-width: 2px;
+            }
+            .faq-answer {
+                padding: 0 16px;
+                font-size: 0.9rem;
+                line-height: 1.7;
+            }
+            .faq-item.active .faq-answer {
+                padding: 14px 16px 18px;
+                max-height: 400px;
+            }
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 16px;
+                margin-bottom: 22px;
+            }
+            .contact-item {
+                padding: 18px 16px;
+                border-width: 3px;
+                box-shadow: 3px 3px 0 #111;
+                gap: 12px;
+                border-radius: var(--radius-sm);
+                flex-wrap: nowrap;
+                padding-left: 56px;
+                min-height: 80px;
+            }
+            .contact-item .icon {
+                font-size: 1.6rem;
+                width: 40px;
+            }
+            .contact-item .icon img {
+                width: 26px;
+                height: 26px;
+            }
+            .contact-item .label {
+                font-size: 0.75rem;
+            }
+            .contact-item .value {
+                font-size: 0.95rem;
+                white-space: normal !important;
+                overflow: visible;
+                text-overflow: clip;
+                word-break: break-all;
+                line-height: 1.5;
+            }
+            .copy-btn {
+                top: 10px;
+                left: 10px;
+                width: 32px;
+                height: 32px;
+                font-size: 0.85rem;
+                border-width: 2px;
+                box-shadow: 2px 2px 0 #111;
+            }
+            .contact-actions {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .contact-actions .btn {
+                width: 100%;
+                padding: 14px 20px;
+                font-size: 1rem;
+                white-space: normal;
+                border-width: 3px;
+                box-shadow: 3px 3px 0 #111;
+            }
+            .pricing-tabs {
+                margin-bottom: 28px;
+            }
+            .pricing-tab-container {
+                border-radius: 40px;
+                padding: 4px 6px;
+                gap: 4px;
+                box-shadow: 4px 4px 0 #111;
+                border-width: 3px;
+            }
+            .pricing-tab {
+                padding: 10px 8px;
+                font-size: 0.85rem;
+                gap: 5px;
+                border-radius: 30px;
+                border-width: 2px;
+            }
+            .pricing-tab i {
+                font-size: 0.9rem;
+            }
+            .pricing-tab.active {
+                box-shadow: 2px 2px 0 #111;
+                transform: translateY(-1px);
+            }
+            .plans-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .plan-card {
+                padding: 22px 18px 20px;
+                border-width: 3px;
+                border-radius: 18px;
+                box-shadow: 4px 4px 0 #111;
+            }
+            .plan-card.popular {
+                border-width: 4px;
+                box-shadow: 5px 5px 0 #111;
+                transform: none;
+            }
+            .plan-card.popular:hover {
+                transform: none;
+            }
+            .popular-badge {
+                top: -16px;
+                left: 14px;
+                font-size: 0.7rem;
+                padding: 3px 12px;
+                border-width: 2px;
+                box-shadow: 2px 2px 0 #111;
+                gap: 4px;
+            }
+            .plan-name {
+                font-size: 1.25rem;
+                gap: 6px;
+            }
+            .plan-desc {
+                font-size: 0.85rem;
+                margin-bottom: 14px;
+                padding-bottom: 10px;
+            }
+            .plan-price {
+                font-size: 1.6rem;
+                gap: 4px;
+            }
+            .plan-price small {
+                font-size: 0.8rem;
+            }
+            .plan-features {
+                margin: 16px 0 18px;
+                gap: 10px;
+            }
+            .plan-features li {
+                font-size: 0.88rem;
+                gap: 8px;
+            }
+            .plan-features li i {
+                font-size: 1.05rem;
+            }
+            .btn-plan {
+                padding: 12px 16px;
+                font-size: 0.95rem;
+                border-width: 2px;
+                box-shadow: 2px 2px 0 #111;
+                border-radius: 10px;
+            }
+            .tools-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+            .tool-card {
+                padding: 16px 12px 14px;
+                border-width: 2px;
+                border-radius: 14px;
+                box-shadow: 3px 3px 0 #111;
+                gap: 5px;
+            }
+            .tool-card::before {
+                width: 40px;
+                height: 40px;
+            }
+            .tool-icon {
+                font-size: 1.5rem;
+                margin-bottom: 0;
+            }
+            .tool-name {
+                font-size: 0.95rem;
+            }
+            .tool-desc {
+                font-size: 0.75rem;
+                line-height: 1.4;
+            }
+            .tool-price {
+                font-size: 0.85rem;
+                padding: 2px 8px;
+                border-width: 2px;
+            }
+            .tool-link {
+                font-size: 0.8rem;
+                gap: 4px;
+            }
+            footer {
+                padding: 32px 0 16px;
+                border-top-width: 4px;
+                border-radius: 14px 14px 0 0;
+                margin-top: 12px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                margin-bottom: 24px;
+            }
+            .footer-brand .logo {
+                font-size: 1.5rem;
+                padding: 4px 12px;
+                border-width: 2px;
+                box-shadow: 2px 2px 0 #111;
+                display: inline-flex;
+            }
+            .footer-brand .logo span {
+                font-size: 0.7rem;
+            }
+            .footer-brand p {
+                font-size: 0.85rem;
+                margin-top: 12px;
+                max-width: 100%;
+                line-height: 1.7;
+            }
+            .footer-links h5 {
+                font-size: 1rem;
+                padding: 3px 10px;
+                border-width: 2px;
+                margin-bottom: 12px;
+                display: inline-block;
+            }
+            .footer-links ul {
+                gap: 10px;
+            }
+            .footer-links a {
+                font-size: 0.88rem;
+                word-break: break-word;
+            }
+            .footer-bottom {
+                font-size: 0.8rem;
+                padding-top: 14px;
+                border-top-width: 2px;
+            }
+            .bottom-nav {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 998;
+                background: var(--yellow);
+                border-top: 3px solid #111;
+                padding-bottom: env(safe-area-inset-bottom, 0px);
+                -webkit-tap-highlight-color: transparent;
+                box-shadow: 0 -1px 0 rgba(17,17,17,0.08);
+            }
+            .bottom-nav-inner {
+                display: flex;
+                align-items: stretch;
+                justify-content: space-around;
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto;
+                padding: 0;
+                height: 58px;
+            }
+            .bottom-nav-item {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 3px;
+                color: #111;
+                font-size: 0.65rem;
+                font-weight: 700;
+                font-family: 'Estedad', 'Poppins', 'Rubik', sans-serif;
+                cursor: pointer;
+                transition: all 0.18s ease;
+                position: relative;
+                border: none;
+                background: transparent;
+                padding: 4px 2px 2px;
+                letter-spacing: -0.2px;
+                -webkit-tap-highlight-color: transparent;
+                user-select: none;
+                min-width: 0;
+            }
+            .bottom-nav-item i {
+                font-size: 1.15rem;
+                transition: transform 0.18s ease, color 0.18s ease;
+                line-height: 1;
+                pointer-events: none;
+            }
+            .bottom-nav-item span {
+                pointer-events: none;
+                line-height: 1.2;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100%;
+            }
+            .bottom-nav-item::after {
+                content: '';
+                position: absolute;
+                top: -3px;
+                right: 50%;
+                transform: translateX(50%);
+                width: 0;
+                height: 3px;
+                background: var(--blue);
+                border-radius: 0 0 3px 3px;
+                transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+                z-index: 2;
+            }
+            .bottom-nav-item:active {
+                transform: scale(0.92);
+                transition-duration: 0.06s;
+            }
+            .bottom-nav-item:active i {
+                transform: scale(0.9);
+            }
+            .bottom-nav-item.active {
+                color: var(--blue);
+                font-weight: 800;
+            }
+            .bottom-nav-item.active i {
+                color: var(--blue);
+                transform: scale(1.06);
+            }
+            .bottom-nav-item.active::after {
+                width: 70%;
+            }
+            .bottom-nav-item:not(.active) i {
+                color: #3D3D3D;
+            }
+            @media (max-width: 380px) {
+                .services-grid {
+                    grid-template-columns: 1fr;
+                    gap: 12px;
+                }
+                .service-item {
+                    min-height: 120px;
+                    padding: 16px 12px;
+                }
+                .process-steps {
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                }
+                .why-grid {
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                }
+                .why-item {
+                    min-height: 140px;
+                    padding: 18px 12px;
+                }
+                .pricing-tab {
+                    font-size: 0.75rem;
+                    padding: 8px 4px;
+                    gap: 3px;
+                }
+                .pricing-tab i {
+                    font-size: 0.8rem;
+                }
+                .bottom-nav-item {
+                    font-size: 0.6rem;
+                    gap: 2px;
+                }
+                .bottom-nav-item i {
+                    font-size: 1.05rem;
+                }
+                .bottom-nav-inner {
+                    height: 52px;
+                }
+                body {
+                    padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px));
+                }
+                .hero-text {
+                    padding: 24px 14px 20px;
+                    gap: 14px;
+                }
+                .hero-title {
+                    font-size: 1.5rem;
+                }
+                .hero-sub {
+                    font-size: 0.9rem;
+                }
+                .section {
+                    padding: 36px 0;
+                }
+                .pricing-section {
+                    padding: 36px 0;
+                }
+                .section-header {
+                    margin-bottom: 24px;
+                }
+                .section-header h2 {
+                    font-size: 1.3rem;
+                    padding: 5px 12px;
+                }
+                .plan-card {
+                    padding: 18px 14px 16px;
+                }
+                .plan-name {
+                    font-size: 1.1rem;
+                }
+                .plan-price {
+                    font-size: 1.4rem;
+                }
+                .tools-grid {
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                }
+                .tool-card {
+                    padding: 14px 12px 12px;
+                }
+                .contact-item .value {
+                    font-size: 0.85rem;
+                }
+                .faq-question {
+                    font-size: 0.85rem;
+                    padding: 12px 12px;
+                    min-height: 42px;
+                }
+                .tool-card .btn-plan {
+                    padding: 5px 8px;
+                    font-size: 0.65rem;
+                }
+            }
+            @media (max-width: 330px) {
+                .hero-text {
+                    padding: 20px 10px 16px;
+                    border-width: 2px;
+                    box-shadow: 3px 3px 0 #111;
+                }
+                .hero-title {
+                    font-size: 1.3rem;
+                }
+                .hero-logo img {
+                    width: 55px;
+                    height: 55px;
+                }
+                .bottom-nav-item {
+                    font-size: 0.55rem;
+                }
+                .bottom-nav-item i {
+                    font-size: 0.95rem;
+                }
+                .pricing-tab {
+                    font-size: 0.7rem;
+                    padding: 6px 2px;
+                }
+                .pricing-tab i {
+                    display: none;
+                }
+                .btn {
+                    padding: 10px 12px;
+                    font-size: 0.85rem;
+                    gap: 6px;
+                }
+                .hero-actions .btn {
+                    font-size: 0.9rem;
+                    padding: 12px 14px;
+                }
+                .tool-card .btn-plan {
+                    padding: 4px 6px;
+                    font-size: 0.6rem;
+                }
+            }
+        }
+        .contact-item .icon img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+        }
+
+        .contact-item .icon img[src*="rubika"] {
+            width: 80px;
+            height: 80px;
+            margin: -20px;
+            margin-right: 0px;
+        }
+
+        .contact-item .icon img[src*="eitaa"] {
+            width: 35px;
+            height: 35px;
+            margin: -20px;
+            margin-right: 0px;
+        }
     </style>
 </head>
-
 <body>
-    <!-- ========== HEADER ========== -->
     <header id="header">
         <div class="container header-inner">
             <a href="#" class="logo">
                 <img src="images/logo.svg" alt="WEXITE">
             </a>
-
             <ul class="nav-links" id="navLinks">
                 <li><a href="#projects">نمونه‌کارها</a></li>
                 <li><a href="#services">خدمات</a></li>
+                <li><a href="#pricing">قیمت‌گذاری</a></li>
                 <li><a href="#process">روند کار</a></li>
                 <li><a href="#why">چرا من؟</a></li>
                 <li><a href="#faq">سوالات</a></li>
                 <li><a href="#contact" class="nav-cta">مشاوره</a></li>
             </ul>
-
             <button class="hamburger" id="hamburger" aria-label="منو">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
-    <!-- ========== HERO ========== -->
     <section class="hero">
         <div class="container hero-grid">
             <div class="hero-text">
-
-                <!-- WEXITE Logo -->
                 <div class="hero-logo">
                     <img src="images/logo.svg" alt="WEXITE">
                 </div>
-
-                <h1 class="hero-title">
-                    وب‌سایت حرفه‌ای<br />
-                    <span class="highlight">برای کسب‌وکار شما</span>
-                </h1>
-
-                <p class="hero-sub">
-                    از منوی دیجیتال و فروشگاه ساده تا لندینگ مدرن — همه‌چیز با UX عالی،
-                    کد تمیز و تحویل سریع.
-                </p>
-
+                <h1 class="hero-title">وب‌سایت حرفه‌ای<br><span class="highlight">برای کسب‌وکار شما</span></h1>
+                <p class="hero-sub">از منوی دیجیتال و فروشگاه ساده تا لندینگ مدرن — همه‌چیز با UX عالی، کد تمیز و تحویل سریع.</p>
                 <div class="hero-actions">
-                    <a href="#projects" class="btn btn-orange">
-                        <i class="fas fa-arrow-left"></i> نمونه‌کارها
-                    </a>
-                    <a href="#contact" class="btn btn-blue">
-                        <i class="fas fa-headset"></i> دریافت مشاوره رایگان
-                    </a>
+                    <a href="#projects" class="btn btn-orange"><i class="fas fa-arrow-left"></i> نمونه‌کارها</a>
+                    <a href="#contact" class="btn btn-blue"><i class="fas fa-headset"></i> دریافت مشاوره رایگان</a>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- ========== PROJECTS ========== -->
     <section class="section" id="projects" style="background: #FDF2D8;">
         <div class="container">
             <div class="section-header">
@@ -1465,50 +2090,34 @@
                 <p>چند پروژه‌ای که با دقت بالا طراحی شده‌اند.</p>
             </div>
             <div class="projects-grid">
-                <!-- project 1 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        <img src="images/pr1.webp" alt="منو دیجیتال رستوران">
-                    </div>
+                    <div class="project-img"><img src="images/pr1.webp" alt="منو دیجیتال رستوران"></div>
                     <div class="project-body">
                         <h3>منو دیجیتال رستوران</h3>
-                        <p>منوی دیجیتال مدرن با نمایش دسته‌بندی غذاها، طراحی واکنش‌گرا و تجربه کاربری ساده برای رستوران‌ها.</p>
-                        <a href="https://itsamirata.github.io/portfolio-menu/" class="btn-sm">
-                            <i class="fas fa-arrow-left"></i> مشاهده دمو
-                        </a>
+                        <p>منوی دیجیتال مدرن با نمایش دسته‌بندی غذاها، طراحی واکنش‌گرا و تجربه کاربری ساده.</p>
+                        <a href="https://itsamirata.github.io/portfolio-menu/" class="btn-sm"><i class="fas fa-arrow-left"></i> مشاهده دمو</a>
                     </div>
                 </div>
-                <!-- project 2 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        <img src="images/pr2.webp" alt="سایت آرایشگاه مردانه">
-                    </div>
+                    <div class="project-img"><img src="images/pr2.webp" alt="سایت آرایشگاه مردانه"></div>
                     <div class="project-body">
                         <h3>سایت معرفی آرایشگاه مردانه</h3>
-                        <p>یک وب‌سایت مدرن برای معرفی خدمات، نمایش نمونه‌کارها و ایجاد راه ارتباطی ساده و سریع با مشتریان.</p>
-                        <a href="https://itsamirata.github.io/portfolio-barber/" class="btn-sm">
-                            <i class="fas fa-arrow-left"></i> مشاهده دمو
-                        </a>
+                        <p>وب‌سایتی مدرن برای معرفی خدمات، نمایش نمونه‌کارها و ارتباط سریع با مشتریان.</p>
+                        <a href="https://itsamirata.github.io/portfolio-barber/" class="btn-sm"><i class="fas fa-arrow-left"></i> مشاهده دمو</a>
                     </div>
                 </div>
-                <!-- project 3 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        <img src="images/pr3.webp" alt="سیستم مدیریت نوبت">
-                    </div>
+                    <div class="project-img"><img src="images/pr3.webp" alt="سیستم مدیریت نوبت"></div>
                     <div class="project-body">
                         <h3>سیستم مدیریت نوبت</h3>
-                        <p>اپلیکیشن سبک مدیریت نوبت با تقویم شمسی، ثبت مشتری، گزارش‌گیری و طراحی مناسب موبایل و دسکتاپ.</p>
-                        <a href="https://itsamirata.github.io/portfolio-appointments/" class="btn-sm">
-                            <i class="fas fa-arrow-left"></i> مشاهده دمو
-                        </a>
+                        <p>اپلیکیشن سبک مدیریت نوبت با تقویم شمسی، ثبت مشتری و گزارش‌گیری.</p>
+                        <a href="https://itsamirata.github.io/portfolio-appointments/" class="btn-sm"><i class="fas fa-arrow-left"></i> مشاهده دمو</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== SERVICES ========== -->
     <section class="section" id="services" style="background: #FFF6E0;">
         <div class="container">
             <div class="section-header">
@@ -1517,41 +2126,34 @@
                 <p>از وب‌سایت معرفی تا ابزارهای تحت وب — همه‌چیز با کیفیت بالا.</p>
             </div>
             <div class="services-grid">
-                <div class="service-item">
-                    <div class="icon"><i class="fas fa-globe"></i></div>
-                    <h4>وب‌سایت معرفی</h4>
-                    <p>برای شرکت‌ها، فروشگاه‌ها، رستوران‌ها و برندهای شخصی</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><i class="fas fa-bullseye"></i></div>
-                    <h4>لندینگ پیج حرفه‌ای</h4>
-                    <p>معرفی محصول، کمپین، تبلیغات و جذب مشتری</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><i class="fas fa-shopping-cart"></i></div>
-                    <h4>فروشگاهی ساده</h4>
-                    <p>معرفی و فروش محصولات با تجربه کاربری عالی</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><i class="fas fa-paint-brush"></i></div>
-                    <h4>رابط کاربری مدرن</h4>
-                    <p>صفحات و داشبوردهای زیبا و ساده</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><i class="fas fa-user-tie"></i></div>
-                    <h4>سایت رزومه و شخصی</h4>
-                    <p>برای فریلنسرها، متخصصان و برند شخصی</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><i class="fas fa-qrcode"></i></div>
-                    <h4>منو دیجیتال و رستورانی</h4>
-                    <p>نمایش منو، خدمات و اطلاعات کسب‌وکارهای غذایی</p>
-                </div>
+                <div class="service-item"><div class="icon"><i class="fas fa-globe"></i></div><h4>وب‌سایت معرفی</h4><p>برای شرکت‌ها، فروشگاه‌ها و برندها</p></div>
+                <div class="service-item"><div class="icon"><i class="fas fa-bullseye"></i></div><h4>لندینگ پیج حرفه‌ای</h4><p>معرفی محصول، کمپین و جذب مشتری</p></div>
+                <div class="service-item"><div class="icon"><i class="fas fa-shopping-cart"></i></div><h4>فروشگاهی ساده</h4><p>معرفی و فروش محصولات</p></div>
+                <div class="service-item"><div class="icon"><i class="fas fa-paint-brush"></i></div><h4>رابط کاربری مدرن</h4><p>صفحات و داشبوردهای زیبا</p></div>
+                <div class="service-item"><div class="icon"><i class="fas fa-user-tie"></i></div><h4>سایت رزومه و شخصی</h4><p>برای فریلنسرها و متخصصان</p></div>
+                <div class="service-item"><div class="icon"><i class="fas fa-qrcode"></i></div><h4>منو دیجیتال</h4><p>نمایش منو و خدمات غذایی</p></div>
             </div>
         </div>
     </section>
 
-    <!-- ========== PROCESS ========== -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-tags"></i> قیمت‌گذاری</span>
+                <h2>پلن‌ها و تعرفه‌ها</h2>
+                <p>شفاف، منصفانه و متناسب با نیاز هر کسب‌وکار.</p>
+            </div>
+            <div class="pricing-tabs">
+                <div class="pricing-tab-container" id="pricingTabContainer">
+                    <div class="pricing-tab active" data-tab="corporate"><i class="fas fa-building"></i> شرکتی</div>
+                    <div class="pricing-tab" data-tab="shop"><i class="fas fa-store"></i> فروشگاهی</div>
+                    <div class="pricing-tab" data-tab="tools"><i class="fas fa-bolt"></i> ابزار و خدمات</div>
+                </div>
+            </div>
+            <div class="pricing-content" id="pricingContent"></div>
+        </div>
+    </section>
+
     <section class="section" id="process" style="background: #FDF2D8;">
         <div class="container">
             <div class="section-header">
@@ -1560,36 +2162,15 @@
                 <p>از ایده اولیه تا تحویل نهایی، قدم‌به‌قدم با شما هستم.</p>
             </div>
             <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-num">۱</div>
-                    <h4>گفتگو و ایده‌پردازی</h4>
-                    <p>شنیدن نیازها، هدف‌گذاری و ترسیم نقشه راه</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">۲</div>
-                    <h4>طراحی UI/UX</h4>
-                    <p>ایجاد وایرفریم، نمونه اولیه و تأیید طراحی</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">۳</div>
-                    <h4>توسعه و کدنویسی</h4>
-                    <p>پیاده‌سازی با کد تمیز، واکنش‌گرا و بهینه</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">۴</div>
-                    <h4>تست و بازخورد</h4>
-                    <p>بررسی عملکرد، رفع اشکال و اعمال تغییرات</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">۵</div>
-                    <h4>تحویل و پشتیبانی</h4>
-                    <p>راه‌اندازی، آموزش و پشتیبانی پس از تحویل</p>
-                </div>
+                <div class="process-step"><div class="step-num">۱</div><h4>گفتگو و ایده‌پردازی</h4><p>شنیدن نیازها، هدف‌گذاری و ترسیم نقشه راه</p></div>
+                <div class="process-step"><div class="step-num">۲</div><h4>طراحی UI/UX</h4><p>ایجاد وایرفریم، نمونه اولیه و تأیید طراحی</p></div>
+                <div class="process-step"><div class="step-num">۳</div><h4>توسعه و کدنویسی</h4><p>پیاده‌سازی با کد تمیز، واکنش‌گرا و بهینه</p></div>
+                <div class="process-step"><div class="step-num">۴</div><h4>تست و بازخورد</h4><p>بررسی عملکرد، رفع اشکال و اعمال تغییرات</p></div>
+                <div class="process-step"><div class="step-num">۵</div><h4>تحویل و پشتیبانی</h4><p>راه‌اندازی، آموزش و پشتیبانی پس از تحویل</p></div>
             </div>
         </div>
     </section>
 
-    <!-- ========== WHY ME ========== -->
     <section class="section" id="why" style="background: #FFF6E0;">
         <div class="container">
             <div class="section-header">
@@ -1598,31 +2179,14 @@
                 <p>دلایلی که باعث می‌شود پروژه‌تان در دستان امنی باشد.</p>
             </div>
             <div class="why-grid">
-                <div class="why-item">
-                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h4>طراحی موبایل‌محور</h4>
-                    <p>همه پروژه‌ها ابتدا برای موبایل طراحی و سپس برای دسکتاپ بهینه می‌شوند.</p>
-                </div>
-                <div class="why-item">
-                    <div class="icon"><i class="fas fa-tachometer-alt"></i></div>
-                    <h4>سرعت و عملکرد بالا</h4>
-                    <p>کد تمیز، بهینه و سبک که بارگذاری سریعی را تضمین می‌کند.</p>
-                </div>
-                <div class="why-item">
-                    <div class="icon"><i class="fas fa-heart"></i></div>
-                    <h4>تجربه کاربری عالی</h4>
-                    <p>تمرکز بر UX باعث می‌شود کاربران به‌راحتی در سایت شما بچرخند.</p>
-                </div>
-                <div class="why-item">
-                    <div class="icon"><i class="fas fa-headset"></i></div>
-                    <h4>پشتیبانی و مشاوره</h4>
-                    <p>تا ۳۰ روز پس از تحویل، کنار شما هستم تا همه‌چیز بی‌نقص باشد.</p>
-                </div>
+                <div class="why-item"><div class="icon"><i class="fas fa-mobile-alt"></i></div><h4>طراحی موبایل‌محور</h4><p>همه پروژه‌ها ابتدا برای موبایل طراحی و سپس دسکتاپ بهینه می‌شوند.</p></div>
+                <div class="why-item"><div class="icon"><i class="fas fa-tachometer-alt"></i></div><h4>سرعت و عملکرد بالا</h4><p>کد تمیز، بهینه و سبک که بارگذاری سریعی را تضمین می‌کند.</p></div>
+                <div class="why-item"><div class="icon"><i class="fas fa-heart"></i></div><h4>تجربه کاربری عالی</h4><p>تمرکز بر UX باعث می‌شود کاربران به‌راحتی در سایت بچرخند.</p></div>
+                <div class="why-item"><div class="icon"><i class="fas fa-headset"></i></div><h4>پشتیبانی و مشاوره</h4><p>تا ۳۰ روز پس از تحویل، کنار شما هستم.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- ========== FAQ ========== -->
     <section class="section" id="faq" style="background: #FDF2D8;">
         <div class="container">
             <div class="section-header">
@@ -1631,78 +2195,47 @@
                 <p>پاسخ به سوالاتی که معمولاً قبل از شروع همکاری پرسیده می‌شوند.</p>
             </div>
             <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>هزینه طراحی سایت چقدر است؟</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        هزینه بستگی به پیچیدگی و تعداد صفحات پروژه دارد. اما با بودجه‌های مختلف، یک راهکار مناسب ارائه می‌دهم. برای دریافت مشاوره دقیق با من تماس بگیرید.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>آیا امکان اعمال تغییرات در حین کار وجود دارد؟</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        بله، در مرحله طراحی (وایرفریم) و پس از ارائه نسخه اولیه، می‌توانید بازخورد خود را بدهید تا خروجی نهایی دقیقاً مطابق انتظار شما باشد.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>چقدر زمان می‌برد تا سایت آماده شود؟</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        پروژه‌های ساده (لندینگ یا منو) معمولاً ۳ تا ۵ روز کاری، و پروژه‌های فروشگاهی یا وب‌اپلیکیشن بین ۷ تا ۱۴ روز کاری زمان می‌برند.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>آیا بعد از تحویل، پشتیبانی دارید؟</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        بله، تا ۳۰ روز پس از تحویل، هرگونه مشکل فنی یا نیاز به تغییرات جزئی را رایگان انجام می‌دهم. همچنین برای هر سؤالی همیشه در دسترس هستم.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>آیا کد سایت را تحویل می‌گیرم؟</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        قطعاً. تمام فایل‌های پروژه (کد، تصاویر، داکیومنت) را در اختیار شما قرار می‌دهم تا مالکیت کامل داشته باشید.
-                    </div>
-                </div>
+                <div class="faq-item"><div class="faq-question"><span>هزینه طراحی سایت چقدر است؟</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">هزینه بستگی به پیچیدگی و تعداد صفحات دارد. برای مشاوره دقیق تماس بگیرید.</div></div>
+                <div class="faq-item"><div class="faq-question"><span>آیا امکان اعمال تغییرات در حین کار وجود دارد؟</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">بله، در مرحله طراحی و پس از ارائه نسخه اولیه بازخورد شما اعمال می‌شود.</div></div>
+                <div class="faq-item"><div class="faq-question"><span>چقدر زمان می‌برد؟</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">پروژه‌های ساده ۳ تا ۵ روز، فروشگاهی ۷ تا ۱۴ روز کاری.</div></div>
+                <div class="faq-item"><div class="faq-question"><span>آیا بعد از تحویل پشتیبانی دارید؟</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">بله، تا ۳۰ روز پس از تحویل رایگان.</div></div>
+                <div class="faq-item"><div class="faq-question"><span>آیا کد سایت را تحویل می‌گیرم؟</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">قطعاً. تمام فایل‌های پروژه در اختیار شما قرار می‌گیرد.</div></div>
             </div>
         </div>
     </section>
 
-    <!-- ========== CONTACT ========== -->
     <section class="section" id="contact" style="background: #FFF6E0;">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag"><i class="fas fa-paper-plane"></i> ارتباط</span>
                 <h2>راه‌های ارتباطی</h2>
-                <p>برای آشنایی بیشتر و دریافت مشاوره اولیه رایگان، خوشحال می‌شوم با شما در ارتباط باشم.</p>
+                <p>برای آشنایی بیشتر و دریافت مشاوره اولیه رایگان.</p>
             </div>
             <div class="contact-wrap">
-                <div class="contact-info">
-                    <div class="contact-item">
+                <div class="contact-info" id="contactInfo">
+                    <!-- ایمیل -->
+                    <div class="contact-item" data-copy="amirata.dev@gmail.com" data-href="mailto:amirata.dev@gmail.com">
                         <div class="icon"><i class="fas fa-envelope"></i></div>
-                        <div class="info">
-                            <span class="label">ایمیل</span>
-                            <span class="value nowrap-desktop" dir="ltr">amirata.dev@gmail.com</span>
-                        </div>
+                        <div class="info"><span class="label">ایمیل</span><span class="value nowrap-desktop" dir="ltr">amirata.dev@gmail.com</span></div>
+                        <button class="copy-btn" title="کپی ایمیل"><i class="fas fa-copy"></i></button>
                     </div>
-                    <div class="contact-item">
+                    <!-- تلگرام -->
+                    <div class="contact-item" data-copy="@its_amirata" data-href="https://t.me/its_amirata">
                         <div class="icon"><i class="fab fa-telegram"></i></div>
-                        <div class="info">
-                            <span class="label">تلگرام</span>
-                            <span class="value" dir="ltr">@its_amirata</span>
-                        </div>
+                        <div class="info"><span class="label">تلگرام</span><span class="value" dir="ltr">@its_amirata</span></div>
+                        <button class="copy-btn" title="کپی یوزرنیم"><i class="fas fa-copy"></i></button>
+                    </div>
+                    <!-- روبیکا -->
+                    <div class="contact-item" data-copy="@its_amirata" data-href="https://rubika.ir/its_amirata">
+                        <div class="icon"><img src="images/rubika.svg" alt="روبیکا"></div>
+                        <div class="info"><span class="label">روبیکا</span><span class="value" dir="ltr">@its_amirata</span></div>
+                        <button class="copy-btn" title="کپی یوزرنیم"><i class="fas fa-copy"></i></button>
+                    </div>
+                    <!-- ایتا -->
+                    <div class="contact-item" data-copy="@its_amirata" data-href="https://eitaa.com/its_amirata">
+                        <div class="icon"><img src="images/eitaa.svg" alt="ایتا"></div>
+                        <div class="info"><span class="label">ایتا</span><span class="value" dir="ltr">@its_amirata</span></div>
+                        <button class="copy-btn" title="کپی یوزرنیم"><i class="fas fa-copy"></i></button>
                     </div>
                 </div>
                 <div class="contact-actions">
@@ -1712,41 +2245,54 @@
         </div>
     </section>
 
-    <!-- ========== FOOTER ========== -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="logo">وکسایت <span style="font-family: fantasy ; font-size: 28px; color: #111111; font-weight: 100; letter-spacing: 2px;">| WEXITE</span></div>
-                    <p>طراحی و توسعه وب مدرن با تمرکز بر تجربه کاربری عالی و کد تمیز. همراه شما از ایده تا اجرا.</p>
+                    <p>طراحی و توسعه وب مدرن با تمرکز بر تجربه کاربری عالی و کد تمیز.</p>
                 </div>
                 <div class="footer-links">
                     <h5>دسترسی سریع</h5>
-                    <ul>
-                        <li><a href="#projects">نمونه‌کارها</a></li>
-                        <li><a href="#services">خدمات</a></li>
-                        <li><a href="#process">روند کار</a></li>
-                        <li><a href="#faq">سوالات</a></li>
-                    </ul>
+                    <ul><li><a href="#projects">نمونه‌کارها</a></li><li><a href="#services">خدمات</a></li><li><a href="#pricing">قیمت‌گذاری</a></li><li><a href="#faq">سوالات</a></li></ul>
                 </div>
                 <div class="footer-links">
                     <h5>ارتباط</h5>
-                    <ul>
-                        <li><a href="mailto:amirata.dev@gmail.com">amirata.dev@gmail.com</a></li>
-                        <li><a href="https://t.me/its_amirata" target="_blank">@its_amirata</a></li>
-                    </ul>
+                    <ul><li><a href="mailto:amirata.dev@gmail.com">amirata.dev@gmail.com</a></li><li><a href="https://t.me/its_amirata" target="_blank">@its_amirata</a></li></ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <span>© ۲۰۲۶ وکسایت | تمامی حقوق محفوظ است.</span>
-            </div>
+            <div class="footer-bottom"><span>© ۲۰۲۶ وکسایت | تمامی حقوق محفوظ است.</span></div>
         </div>
     </footer>
 
-    <!-- ========== SCRIPTS ========== -->
+    <!-- ========== BOTTOM NAVIGATION ========== -->
+    <nav class="bottom-nav" id="bottomNav" aria-label="منوی پایین">
+        <div class="bottom-nav-inner">
+            <a href="#" class="bottom-nav-item active" data-section="home">
+                <i class="fas fa-home"></i>
+                <span>خانه</span>
+            </a>
+            <a href="#projects" class="bottom-nav-item" data-section="projects">
+                <i class="fas fa-folder-open"></i>
+                <span>نمونه‌کار</span>
+            </a>
+            <a href="#services" class="bottom-nav-item" data-section="services">
+                <i class="fas fa-cogs"></i>
+                <span>خدمات</span>
+            </a>
+            <a href="#pricing" class="bottom-nav-item" data-section="pricing">
+                <i class="fas fa-tags"></i>
+                <span>قیمت</span>
+            </a>
+            <a href="#contact" class="bottom-nav-item" data-section="contact">
+                <i class="fas fa-envelope"></i>
+                <span>تماس</span>
+            </a>
+        </div>
+    </nav>
+
     <script>
         (function() {
-            // ---------- HAMBURGER ----------
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('navLinks');
             if (hamburger && navLinks) {
@@ -1755,14 +2301,12 @@
                     this.classList.toggle('active');
                     navLinks.classList.toggle('open');
                 });
-
                 navLinks.querySelectorAll('a').forEach(link => {
                     link.addEventListener('click', () => {
                         hamburger.classList.remove('active');
                         navLinks.classList.remove('open');
                     });
                 });
-
                 document.addEventListener('click', function(e) {
                     if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
                         hamburger.classList.remove('active');
@@ -1771,52 +2315,278 @@
                 });
             }
 
-            // ---------- HEADER SCROLL EFFECT ----------
             const header = document.getElementById('header');
             window.addEventListener('scroll', function() {
                 const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-                if (currentScroll > 20) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            });
+                if (currentScroll > 20) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+            }, { passive: true });
 
-            // ---------- FAQ ACCORDION ----------
+            // FAQ
             const faqItems = document.querySelectorAll('.faq-item');
             faqItems.forEach(item => {
                 const question = item.querySelector('.faq-question');
                 if (question) {
                     question.addEventListener('click', function() {
                         faqItems.forEach(other => {
-                            if (other !== item && other.classList.contains('active')) {
-                                other.classList.remove('active');
-                            }
+                            if (other !== item && other.classList.contains('active')) other.classList.remove('active');
                         });
                         item.classList.toggle('active');
                     });
                 }
             });
+            if (faqItems.length > 0) faqItems[0].classList.add('active');
 
-            if (faqItems.length > 0) {
-                faqItems[0].classList.add('active');
-            }
-
-            // ---------- SMOOTH SCROLL FOR ANCHOR LINKS ----------
+            // Smooth scroll
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
+                    if (targetId === '#') {
+                        e.preventDefault();
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        return;
+                    }
                     const target = document.querySelector(targetId);
                     if (target) {
                         e.preventDefault();
-                        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 75;
+                        const headerHeight = header ? header.offsetHeight : 60;
+                        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - headerHeight + 4;
                         window.scrollTo({ top: offsetTop, behavior: 'smooth' });
                     }
                 });
             });
+
+            // ========== PRICING TABS ==========
+            const tabs = document.querySelectorAll('.pricing-tab');
+            const pricingContent = document.getElementById('pricingContent');
+
+            const data = {
+                corporate: `
+                    <div class="plans-grid">
+                        <div class="plan-card">
+                            <div class="plan-name"><i class="fas fa-rocket" style="color:#1747E7;"></i> شروع</div>
+                            <div class="plan-desc">برای حضور اولیه و معرفی کسب‌وکار</div>
+                            <div class="plan-price"><span>از ۲.۹</span> <small>میلیون تومان</small></div>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check-circle"></i> سایت معرفی تک‌صفحه‌ای کامل</li>
+                                <li><i class="fas fa-check-circle"></i> معرفی کسب‌وکار و خدمات</li>
+                                <li><i class="fas fa-check-circle"></i> نمونه‌کارها</li>
+                                <li><i class="fas fa-check-circle"></i> پرسش‌های متداول</li>
+                                <li><i class="fas fa-check-circle"></i> فرم تماس</li>
+                                <li><i class="fas fa-check-circle"></i> سئو پایه</li>
+                                <li><i class="fas fa-check-circle"></i> طراحی واکنش‌گرا</li>
+                            </ul>
+                            <a href="#contact" class="btn-plan blue"><i class="fas fa-arrow-left"></i> درخواست</a>
+                        </div>
+                        <div class="plan-card popular">
+                            <span class="popular-badge"><i class="fas fa-star"></i> محبوب‌ترین</span>
+                            <div class="plan-name"><i class="fas fa-gem" style="color:#F75B2B;"></i> حرفه‌ای</div>
+                            <div class="plan-desc">برای برندهای در حال رشد</div>
+                            <div class="plan-price"><span>از ۴.۹</span> <small>میلیون تومان</small></div>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check-circle"></i> سایت تا ۵ صفحه</li>
+                                <li><i class="fas fa-check-circle"></i> صفحات اختصاصی خدمات</li>
+                                <li><i class="fas fa-check-circle"></i> نمونه‌کار حرفه‌ای</li>
+                                <li><i class="fas fa-check-circle"></i> معرفی تیم / مجموعه</li>
+                                <li><i class="fas fa-check-circle"></i> فرم‌های پیشرفته</li>
+                                <li><i class="fas fa-check-circle"></i> سئو کامل</li>
+                                <li><i class="fas fa-check-circle"></i> طراحی اختصاصی‌تر</li>
+                            </ul>
+                            <a href="#contact" class="btn-plan orange"><i class="fas fa-arrow-left"></i> درخواست</a>
+                        </div>
+                        <div class="plan-card">
+                            <div class="plan-name"><i class="fas fa-crown" style="color:#F7BD1D;"></i> پیشرفته</div>
+                            <div class="plan-desc">برای سازمان‌ها و پروژه‌های خاص</div>
+                            <div class="plan-price"><span>از ۷.۹</span> <small>میلیون تومان</small></div>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check-circle"></i> سایت چندصفحه‌ای کامل</li>
+                                <li><i class="fas fa-check-circle"></i> طراحی کاملاً اختصاصی</li>
+                                <li><i class="fas fa-check-circle"></i> بخش‌های تعاملی</li>
+                                <li><i class="fas fa-check-circle"></i> امکانات سفارشی</li>
+                                <li><i class="fas fa-check-circle"></i> سئوی پیشرفته</li>
+                                <li><i class="fas fa-check-circle"></i> بهینه‌سازی حرفه‌ای</li>
+                            </ul>
+                            <a href="#contact" class="btn-plan"><i class="fas fa-arrow-left"></i> درخواست</a>
+                        </div>
+                    </div>
+                `,
+                shop: `
+                    <div class="plans-grid">
+                        <div class="plan-card">
+                            <div class="plan-name"><i class="fas fa-store" style="color:#1747E7;"></i> شروع</div>
+                            <div class="plan-desc">فروشگاه پایه برای شروع آنلاین</div>
+                            <div class="plan-price"><span>از ۵.۹</span> <small>میلیون تومان</small></div>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check-circle"></i> فروشگاه اینترنتی پایه</li>
+                                <li><i class="fas fa-check-circle"></i> معرفی و دسته‌بندی محصولات</li>
+                                <li><i class="fas fa-check-circle"></i> صفحه محصول</li>
+                                <li><i class="fas fa-check-circle"></i> سبد خرید</li>
+                                <li><i class="fas fa-check-circle"></i> ثبت سفارش</li>
+                                <li><i class="fas fa-check-circle"></i> سئو پایه</li>
+                                <li><i class="fas fa-check-circle"></i> طراحی واکنش‌گرا</li>
+                            </ul>
+                            <a href="#contact" class="btn-plan blue"><i class="fas fa-arrow-left"></i> درخواست</a>
+                        </div>
+                        <div class="plan-card popular">
+                            <span class="popular-badge"><i class="fas fa-star"></i> محبوب‌ترین</span>
+                            <div class="plan-name"><i class="fas fa-cart-shopping" style="color:#F75B2B;"></i> حرفه‌ای</div>
+                            <div class="plan-desc">فروشگاه کامل با امکانات بیشتر</div>
+                            <div class="plan-price"><span>از ۸.۹</span> <small>میلیون تومان</small></div>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check-circle"></i> فروشگاه کامل‌تر</li>
+                                <li><i class="fas fa-check-circle"></i> جستجو و فیلتر محصولات</li>
+                                <li><i class="fas fa-check-circle"></i> مدیریت سفارش‌ها</li>
+                                <li><i class="fas fa-check-circle"></i> درگاه پرداخت</li>
+                                <li><i class="fas fa-check-circle"></i> کد تخفیف</li>
+                                <li><i class="fas fa-check-circle"></i> سئو کامل</li>
+                                <li><i class="fas fa-check-circle"></i> طراحی اختصاصی</li>
+                            </ul>
+                            <a href="#contact" class="btn-plan orange"><i class="fas fa-arrow-left"></i> درخواست</a>
+                        </div>
+                        <div class="plan-card">
+                            <div class="plan-name"><i class="fas fa-chart-line" style="color:#F7BD1D;"></i> پیشرفته</div>
+                            <div class="plan-desc">فروشگاه حرفه‌ای با امکانات سفارشی</div>
+                            <div class="plan-price"><span>از ۱۲.۹</span> <small>میلیون تومان</small></div>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check-circle"></i> فروشگاه حرفه‌ای و اختصاصی</li>
+                                <li><i class="fas fa-check-circle"></i> امکانات سفارشی</li>
+                                <li><i class="fas fa-check-circle"></i> جستجو و فیلتر پیشرفته</li>
+                                <li><i class="fas fa-check-circle"></i> مدیریت کامل محصولات و سفارش‌ها</li>
+                                <li><i class="fas fa-check-circle"></i> اتصال سرویس‌های جانبی</li>
+                                <li><i class="fas fa-check-circle"></i> سئوی پیشرفته</li>
+                            </ul>
+                            <a href="#contact" class="btn-plan"><i class="fas fa-arrow-left"></i> درخواست</a>
+                        </div>
+                    </div>
+                `,
+                tools: `
+                    <div class="tools-grid">
+                        <div class="tool-card"><div class="tool-icon"><i class="fas fa-utensils"></i></div><div class="tool-name">منوی دیجیتال</div><div class="tool-desc">منوی آنلاین برای رستوران و کافه</div><div class="tool-price">از ۱.۹ میلیون</div><a href="#contact" class="btn-plan blue"><i class="fas fa-arrow-left"></i> درخواست</a></div>
+                        <div class="tool-card"><div class="tool-icon"><i class="fas fa-book"></i></div><div class="tool-name">کاتالوگ محصولات</div><div class="tool-desc">نمایش دیجیتال محصولات</div><div class="tool-price">از ۲.۴ میلیون</div><a href="#contact" class="btn-plan blue"><i class="fas fa-arrow-left"></i> درخواست</a></div>
+                        <div class="tool-card"><div class="tool-icon"><i class="fas fa-calendar-check"></i></div><div class="tool-name">سیستم رزرو آنلاین</div><div class="tool-desc">رزرو وقت و خدمات</div><div class="tool-price">از ۳.۴ میلیون</div><a href="#contact" class="btn-plan blue"><i class="fas fa-arrow-left"></i> درخواست</a></div>
+                        <div class="tool-card"><div class="tool-icon"><i class="fas fa-clock"></i></div><div class="tool-name">سیستم نوبت‌دهی</div><div class="tool-desc">نوبت‌دهی هوشمند</div><div class="tool-price">از ۳.۹ میلیون</div><a href="#contact" class="btn-plan blue"><i class="fas fa-arrow-left"></i> درخواست</a></div>
+                        <div class="tool-card"><div class="tool-icon"><i class="fas fa-cart-plus"></i></div><div class="tool-name">سفارش آنلاین</div><div class="tool-desc">ثبت سفارش آنلاین سریع</div><div class="tool-price">از ۳.۹ میلیون</div><a href="#contact" class="btn-plan blue"><i class="fas fa-arrow-left"></i> درخواست</a></div>
+                        <div class="tool-card"><div class="tool-icon"><i class="fas fa-bullhorn"></i></div><div class="tool-name">لندینگ تبلیغاتی</div><div class="tool-desc">صفحه فرود برای کمپین</div><div class="tool-price">از ۲.۹ میلیون</div><a href="#contact" class="btn-plan blue"><i class="fas fa-arrow-left"></i> درخواست</a></div>
+                        <div class="tool-card"><div class="tool-icon"><i class="fas fa-file-signature"></i></div><div class="tool-name">فرم درخواست خدمات</div><div class="tool-desc">فرم اختصاصی درخواست</div><div class="tool-price">از ۱.۹ میلیون</div><a href="#contact" class="btn-plan blue"><i class="fas fa-arrow-left"></i> درخواست</a></div>
+                        <div class="tool-card"><div class="tool-icon"><i class="fas fa-tools"></i></div><div class="tool-name">سرویس سفارشی</div><div class="tool-desc">ابزار یا سرویس مخصوص شما</div><div class="tool-price">قیمت توافقی</div><a href="#contact" class="btn-plan blue"><i class="fas fa-arrow-left"></i> درخواست</a></div>
+                    </div>
+                `
+            };
+
+            function renderTab(tabName) {
+                pricingContent.innerHTML = data[tabName];
+                pricingContent.style.animation = 'none';
+                void pricingContent.offsetWidth;
+                pricingContent.style.animation = 'fadeInUp 0.45s forwards';
+            }
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    renderTab(this.getAttribute('data-tab'));
+                });
+            });
+            renderTab('corporate');
+
+            // ========== CONTACT CARDS: CLICK & COPY ==========
+            const contactItems = document.querySelectorAll('.contact-item');
+            contactItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    if (e.target.closest('.copy-btn')) return;
+                    const href = this.getAttribute('data-href');
+                    if (href) {
+                        if (href.startsWith('mailto:')) {
+                            window.location.href = href;
+                        } else {
+                            window.open(href, '_blank', 'noopener');
+                        }
+                    }
+                });
+
+                const copyBtn = item.querySelector('.copy-btn');
+                if (copyBtn) {
+                    copyBtn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        const textToCopy = item.getAttribute('data-copy') || '';
+                        navigator.clipboard.writeText(textToCopy).then(() => {
+                            const originalIcon = this.innerHTML;
+                            this.innerHTML = '<i class="fas fa-check"></i>';
+                            this.classList.add('copied');
+                            setTimeout(() => {
+                                this.innerHTML = originalIcon;
+                                this.classList.remove('copied');
+                            }, 1200);
+                        }).catch(() => {
+                            const textArea = document.createElement('textarea');
+                            textArea.value = textToCopy;
+                            document.body.appendChild(textArea);
+                            textArea.focus();
+                            textArea.select();
+                            try {
+                                document.execCommand('copy');
+                                const originalIcon = this.innerHTML;
+                                this.innerHTML = '<i class="fas fa-check"></i>';
+                                this.classList.add('copied');
+                                setTimeout(() => {
+                                    this.innerHTML = originalIcon;
+                                    this.classList.remove('copied');
+                                }, 1200);
+                            } catch (err) {
+                                alert('کپی نشد، لطفا دستی کپی کنید.');
+                            }
+                            document.body.removeChild(textArea);
+                        });
+                    });
+                }
+            });
+
+            // ========== BOTTOM NAV SCROLL-SPY ==========
+            const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
+            const sections = {
+                home: { element: null, offset: 0 },
+                projects: { element: document.getElementById('projects'), offset: 0 },
+                services: { element: document.getElementById('services'), offset: 0 },
+                pricing: { element: document.getElementById('pricing'), offset: 0 },
+                contact: { element: document.getElementById('contact'), offset: 0 }
+            };
+
+            function updateActiveNavItem() {
+                const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+                const headerHeight = header ? header.offsetHeight : 60;
+                const triggerPoint = scrollY + headerHeight + 50;
+                let activeId = 'home';
+
+                const sectionIds = ['contact', 'pricing', 'services', 'projects'];
+                for (const id of sectionIds) {
+                    const el = sections[id].element;
+                    if (el && el.offsetTop <= triggerPoint) {
+                        activeId = id;
+                        break;
+                    }
+                }
+                if (scrollY < 80) activeId = 'home';
+
+                bottomNavItems.forEach(item => {
+                    const sectionId = item.getAttribute('data-section');
+                    if (sectionId === activeId) item.classList.add('active');
+                    else item.classList.remove('active');
+                });
+            }
+
+            updateActiveNavItem();
+            window.addEventListener('scroll', updateActiveNavItem, { passive: true });
+            window.addEventListener('resize', updateActiveNavItem, { passive: true });
+
+            const homeNavItem = document.querySelector('.bottom-nav-item[data-section="home"]');
+            if (homeNavItem) {
+                homeNavItem.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
         })();
     </script>
 </body>
-
 </html>
